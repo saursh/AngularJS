@@ -3,12 +3,16 @@
     <head>
        <!-- <script src="https://code.angularjs.org/1.7.0/angular.js"></script>-->
         <script src="https://code.angularjs.org/1.2.25/angular.js"></script>
-        
         <script src="controller.js"></script>
     </head>
     <body>
         <div ng-controller="MainController">
             <h1>{{message}}</h1>
+            <div>First Name: {{person.firstName}}</div>
+            <div>Last Name: {{person.lastName}}</div>
+            <div>
+               <img ng-src="{{person.image}}" title="{{person.firstName}} {{person.lastName}}">
+            </div>
         </div>
     </body>
 </html>
